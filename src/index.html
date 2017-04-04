@@ -9,7 +9,7 @@
 	<% json.Sheet1.forEach(function(t) { %>
     <% if (t.section == 'one') { %>
       <div class="bg-section">
-        <div class="image"><img src="./assets/<%= t.section %>.png"></div> 
+        <div class="image"><img src="http://projects.sfchronicle.com/2017/embed-future-of/money/<%= t.section %>.png"></div> 
         <div class="header">
         	<div class="headline"><%= t.headline %></div>
         	<div class="deck"><%= t.deck %></div>
@@ -18,7 +18,7 @@
     <% } %>
     <% if (t.section != 'one') { %>
       <div class="bg-section">
-        <div class="image"><img src="./assets/<%= t.section %>.png"></div>
+        <div class="image"><img src="http://projects.sfchronicle.com/2017/embed-future-of/money/<%= t.section %>.png"></div>
         <div class="header <%= t.section %>">
         <% if (t.headline) { %>	
         	<div class="headline"><%= t.headline %></div>
