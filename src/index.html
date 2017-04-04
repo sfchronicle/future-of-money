@@ -1,65 +1,43 @@
+<!-- build:remove -->
 <%= t.include("partials/_top.html") %>
-    
+<!-- /build -->
+<!-- build:css inline -->
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- /build -->
 
-  <!-- CODE THAT GOES IN THE FREEFORM -->
-  
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <div id="fof">
-  	
- 
-  	
-  	<% json.Sheet1.forEach(function(t) { %>
-      
-      <% if (t.section == 'one') { %>
-        <div class="bg-section">
-          <div class="image"><img src="./assets/<%= t.section %>.png"></div> 
-          <div class="header">
-          	<div class="headline"><%= t.headline %></div>
-          	<div class="deck"><%= t.deck %></div>
-          </div>             
-        </div>
-      <% } %>
+<div id="fof">
+	<% json.Sheet1.forEach(function(t) { %>
+    <% if (t.section == 'one') { %>
+      <div class="bg-section">
+        <div class="image"><img src="./assets/<%= t.section %>.png"></div> 
+        <div class="header">
+        	<div class="headline"><%= t.headline %></div>
+        	<div class="deck"><%= t.deck %></div>
+        </div>             
+      </div>
+    <% } %>
+    <% if (t.section != 'one') { %>
+      <div class="bg-section">
+        <div class="image"><img src="./assets/<%= t.section %>.png"></div>
+        <div class="header <%= t.section %>">
+        <% if (t.headline) { %>	
+        	<div class="headline"><%= t.headline %></div>
+        <% } %>
+        <% if (t.deck) { %>	
+        	<div class="deck">
+        		<%= t.deck %>
+        			<% if (t.url != 'none') { %>	
+	          	<br><a href="<%= t.url %>"><span>READ MORE</span></a>
+	          <% } %>	
+      		</div>
+        <% } %>	          	
+        </div>             
+      </div>
+    <% } %>
+  <% }); %>
+</div>
 
-      <% if (t.section != 'one') { %>
-        <div class="bg-section">
-          <div class="image"><img src="./assets/<%= t.section %>.png"></div>
-          <div class="header <%= t.section %>">
-
-           
-          <% if (t.headline) { %>	
-          	<div class="headline"><%= t.headline %></div>
-          <% } %>
-
-          <% if (t.deck) { %>	
-          	<div class="deck">
-          		<%= t.deck %>
-          			<% if (t.url != 'none') { %>	
-		          	<br><span>READ MORE</span>
-		          <% } %>	
-        		</div>
-
-          <% } %>	
-
-          
-          	
-          </div>             
-        </div>
-      <% } %>
-
-
-        
-    <% }); %>
-  	
-
-  </div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/balance-text/3.0.0/balancetext.min.js"></script>
-  <script>
-    balanceText();
-  </script>
-
-
-  <!-- CODE THAT GOES IN THE FREEFORM -->
-
-
+<!-- build:remove -->
 <%= t.include("partials/_bottom.html") %>
+<!-- /build -->
+
