@@ -1,0 +1,47 @@
+[
+  {
+    "headline": "Future of money",
+    "deck": "Meet the money changers: \u0003entrepreneurs and inventors \u0003transforming the way we pay",
+    "notes": "MAIN TITLE",
+    "section": "one"
+  },
+  {
+    "deck": "Silicon Valley sees money as digits and algorithms — while the rest of the world views currency through an emotional lens.",
+    "notes": "MONEY0409_MAIN",
+    "section": "two"
+  },
+  {
+    "deck": "Like AMC’s Synths, robo-advisers are developing a human side.",
+    "notes": "MONEY0409_ROBO",
+    "section": "three"
+  },
+  {
+    "deck": "Want to spend your bitcoin? Visa has a card for that.",
+    "notes": "MONEY0409_CREDIT",
+    "section": "four"
+  },
+  {
+    "headline": "More than 40 percent",
+    "deck": "Millennials who used peer-to-peer payments on their cell phones in 2014",
+    "notes": "MONEY0409_P2P",
+    "section": "five"
+  },
+  {
+    "headline": "Did you know? ",
+    "deck": "In China, more than 300 million WeChat users have linked bank accounts to the app for mobile payments.",
+    "url": "none",
+    "notes": "Bonus stat",
+    "section": "six"
+  },
+  {
+    "headline": "$2.4 million",
+    "deck": "Intuit’s spending on lobbying in 2016, much of it trying to stop free online tax filing",
+    "notes": "MONEY0409_TAXES",
+    "section": "seven"
+  },
+  {
+    "deck": "Tech workers are sharing salaries online, breaking a workplace taboo.",
+    "notes": "MONEY0409_CULTURE",
+    "section": "eight"
+  }
+]
