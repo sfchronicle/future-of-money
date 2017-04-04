@@ -15,6 +15,10 @@ Running project
 	Run `grunt` to start a server and go to http://localhost:8000/ to view project
 
 
+Updating CSS
+	
+	Only make CSS changes in src > css > project.less file
+
 Getting code for WCM freeform
 
 	Run `grunt wcm` to build code and look for the wcm.html file in the build folder. Open it in Sublime and copy the code.
