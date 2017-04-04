@@ -1,0 +1,20 @@
+Installing `Future of Money` project
+
+	Run `git clone https://github.com/sfchronicle/future-of-money` to install project
+
+	Install `node modules` by running `npm install`
+
+
+Updating data
+
+	Run `grunt sheets` and data will be updated from: https://docs.google.com/spreadsheets/d/1weSHcqt6t5qhnTTs-JmkDRLPEvCwnffCJPkyJEPSmig
+
+
+Running project
+
+	Run `grunt` to start a server and go to http://localhost:8000/ to view project
+
+
+Getting code for WCM freeform
+
+	Run `grunt wcm` to build code and look for the wcm.html file in the build folder. Open it in Sublime and copy the code.
